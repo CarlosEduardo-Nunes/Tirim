@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #1a1a1a;
+    color: #fff;
+    cursor: none; 
+}
+h1 {
+    color: #4CAF50;
+}
+
+#status {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+#jogo {
+    width: 800px; 
+    height: 600px; 
+    border: 3px solid #4CAF50;
+    position: relative;
+    background-color: #333;
+    margin: 20px auto;
+    overflow: hidden; 
+   
+}
+
+.alvo {
+    width: 7px; 
+    height: 7px;
+    background-color: red;
+    border-radius: 50%; 
+    position: absolute; 
+    opacity: 1;
+    transition: all 0.1s ease-out;
+}
+
+
+#mira {
+    position: fixed; 
+    width: 5px; 
+    height: 5px;
+    background-color: transparent; 
+    border: 2px solid whitesmoke; 
+    border-radius: 50%;
+    pointer-events: none; 
+    z-index: 9999; 
+    
+    transform: translate(-50%, -50%); 
+    
+    opacity: 1;
+    box-shadow: 0 0 5px rgba(0, 255, 0, 0.5); 
+}
+
+.alvo.hit {
+    background-color: #00ff00; 
+    transform: scale(2); 
+    opacity: 0;          
+    transition: all 0.2s ease-out; 
+    
+}
+
+
+.alvo {
+    width: 20px; 
+    height: 20px;
+    background-color: red;
+    border-radius: 50%; 
+    position: absolute; 
+    opacity: 1;
+    transition: all 0.1s ease-out; 
+}
